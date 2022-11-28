@@ -1,4 +1,4 @@
-package cn.knightzz;
+package cn.knightzz.springframework;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -17,7 +17,7 @@ public class BeanFactory {
     private Map<String, BeanDefinition> beanDefinitionMaps = new HashMap<>();
 
     public Object getBean(String beanName) {
-        return beanDefinitionMaps.get(beanName);
+        return beanDefinitionMaps.get(beanName).getBean();
     }
 
     public void registerBeanDefinition(String beanName, BeanDefinition beanDefinition) {

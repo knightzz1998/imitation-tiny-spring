@@ -1,4 +1,4 @@
-package cn.knightzz;
+package cn.knightzz.springframework;
 
 /**
  * @author 王天赐
